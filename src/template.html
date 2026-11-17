@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1F7A5F">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="Zaeem Azhar">
+<title>HomoeoClinic</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+/*__FONTS__*/
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div id="splash" aria-label="HomoeoClinic">
+  <div class="sp-mid">
+    <svg width="112" height="112" viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A9374"/><stop offset="1" stop-color="#14604A"/></linearGradient></defs><rect width="512" height="512" rx="116" fill="url(#sg)"/><path d="M150 366C132 232 238 128 376 138C388 276 292 380 150 366Z" fill="#F4F1EA"/><path d="M176 344C232 276 292 214 350 166" fill="none" stroke="#1F7A5F" stroke-width="13" stroke-linecap="round"/><path d="M200 300C226 300 252 304 276 318M236 256C262 254 288 256 312 268" fill="none" stroke="#1F7A5F" stroke-width="9" stroke-linecap="round" opacity=".55"/><path d="M360 262C360 262 318 314 318 346A42 42 0 0 0 402 346C402 314 360 262 360 262Z" fill="#F2B544" stroke="#1F7A5F" stroke-width="10" stroke-linejoin="round"/></svg>
+    <div class="sp-name">HomoeoClinic</div>
+    <div class="sp-greet" id="splash-greet"></div>
+  </div>
+  <div class="sp-foot">Developed by Zaeem Azhar</div>
+</div>
+<div id="app">
+  <aside id="side"></aside>
+  <div id="main">
+    <header id="top"><h1 id="title">Home</h1></header>
+    <main id="view"></main>
+  </div>
+</div>
+<nav id="bottom"></nav>
+<div id="toast" aria-live="polite"></div>
+<div id="print"></div>
+<script>
+(function(){var h=new Date().getHours(),g=h<5?'Good night':h<12?'Good morning':h<14?'Good noon':h<17?'Good afternoon':h<21?'Good evening':'Good night',e=document.getElementById('splash-greet');var d=null;try{d=JSON.parse(localStorage.getItem('hs_doc')||'null')}catch(x){}e.textContent=g+', '+(d||'doctor')})();
+</script>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>

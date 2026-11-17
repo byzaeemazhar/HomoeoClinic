@@ -1,0 +1,7 @@
+{
+  "appId": "com.zaeemazhar.homoeoclinic",
+  "appName": "HomoeoClinic",
+  "webDir": "www",
+  "android": { "allowMixedContent": false },
+  "plugins": { "SplashScreen": { "launchShowDuration": 0 } }
+}
